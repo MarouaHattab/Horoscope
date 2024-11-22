@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#F8F9FA"
+    android:padding="20dp">
+    <ImageView
+        android:id="@+id/photoImageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/astro"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Horoscope Finder"
+        android:textSize="28sp"
+        android:textColor="#6200EE"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Your Birth Date"
+        android:textSize="18sp"
+        android:textColor="#333333"
+        android:layout_marginBottom="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Month"
+        android:textSize="16sp"
+        android:textColor="#555555"
+        android:layout_marginBottom="5dp" />
+
+    <Spinner
+        android:id="@+id/monthSpinner"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/spinner_background"
+        android:layout_marginBottom="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Day"
+        android:textSize="16sp"
+        android:textColor="#555555"
+        android:layout_marginBottom="5dp" />
+
+    <Spinner
+        android:id="@+id/daySpinner"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/spinner_background"
+        android:layout_marginBottom="30dp" />
+
+    <Button
+        android:id="@+id/findSignButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find My Sign"
+        android:backgroundTint="#6200EE"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:paddingHorizontal="40dp"
+        android:paddingVertical="10dp"
+        android:layout_marginTop="20dp"
+        android:elevation="4dp" />
+
+</LinearLayout>
